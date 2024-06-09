@@ -3,7 +3,7 @@ import re
 def strip_punctuation_ru(data):
 
   return re.sub(r'[^\w\s]', '', data).strip()
-
+  # Задание 5
 def test_strip_punctuation_ru():
   """Тестирующая программа для функции strip_punctuation_ru."""
   tests = [
@@ -24,10 +24,10 @@ def test_strip_punctuation_ru():
     print("NO")
 
 if __name__ == "__main__":
-  # Задание 5: Тестирование strip_punctuation_ru
+
   test_strip_punctuation_ru()
 
-  # Задание 6: Использование strip_punctuation_ru
+  # Задание 6
   data = input("Введите текст: ")
   result = strip_punctuation_ru(data)
   print(f"Текст без знаков препинания: {result}")
