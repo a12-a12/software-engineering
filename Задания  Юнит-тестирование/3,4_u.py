@@ -1,6 +1,6 @@
 # Задание 3
 def test_is_correct_mobile_phone_number_ru():
-    test_cases = ["+79001234567", "89001234567", "+7(900)1234567", "8 (900) 123-45-67", "+7 999 123-45-67", "1234567890"]
+    test_cases = ["89001234567","+79001234567",  "+7(900)1234567", "8 (900) 123-45-67", "+7 999 123-45-67", "1234567890"]
     for case in test_cases:
         if is_correct_mobile_phone_number_ru(case):
             continue
