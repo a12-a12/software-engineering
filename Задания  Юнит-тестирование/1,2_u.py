@@ -1,6 +1,6 @@
 # Задание 1
 def test_is_palindrome():
-    test_cases = ["radar", "level", "hello", "madam", "noon"]
+    test_cases = ["sagas", "level", "hello", "madam", "noon", "solos", "game"]
     for case in test_cases:
         if is_palindrome(case):
             continue
