@@ -19,7 +19,6 @@ def get_city_coordinates(city_name):
 
 
 def create_city_map(latitude, longitude, zoom=0.5):
-    """Создает карту части города."""
     fig = plt.figure(figsize=(8, 6))
     ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree())
 
@@ -41,7 +40,6 @@ def create_city_map(latitude, longitude, zoom=0.5):
 
 
 def main():
-    """Создает слайд-шоу с картами городов."""
     for city in cities:
         coordinates = get_city_coordinates(city)
         if coordinates:
