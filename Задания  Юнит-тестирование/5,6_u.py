@@ -5,7 +5,6 @@ def strip_punctuation_ru(data):
   return re.sub(r'[^\w\s]', '', data).strip()
 
 def test_strip_punctuation_ru():
-  """Тестирующая программа для функции strip_punctuation_ru."""
   tests = [
     ("Привет, мир!", "Привет мир"),
     ("Как дела?  Хорошо.", "Как дела Хорошо"),
